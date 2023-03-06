@@ -77,7 +77,12 @@ def checkperiod(period):
     
     
 def printhabits(inhalt):
-    # prints the habits of a list (an add the period)
+    """ prints list of names and the dedicated period. 
+    
+    inhalt: database export. name, period (so x[0] is the hole name of the entry)
+    
+    return: -
+    """
     t = 0
     for x in inhalt:
         t = t+1
@@ -85,11 +90,16 @@ def printhabits(inhalt):
         print(t, ": ",  x[0], "(period = ", per, ")")
         
 def printhabitslist(inhalt):
-    # print the habits of a list (without the period)
+    """ prints list of names 
+    
+    inhalt: a list of names (built in the python code, so x[0] is the first character of the entry) 
+        
+    return: -
+    """
     t = 0
     for x in inhalt:
         t = t+1
-        print(t, ": ",  x[0],)
+        print(t, ": ",  x)
 
 
 def allhabits(dbz):
@@ -214,7 +224,7 @@ def delcheckouthabit(dbz, habit):
                     testout = 1
                     print("Now you have removed the checked out of the habit", habit, "for today")
             if test2 == 0:
-                print("You havn't checkt out the habit", habit, "for today")
+                print("You haven't checkt out the habit", habit, "for today")
                 testout = 2
     if test1 == 0: 
         print("The habit", habit, "doesn't exist")
