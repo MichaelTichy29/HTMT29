@@ -41,7 +41,7 @@ Depending on your choice on this level you have further options respectively hav
 
 The test of the program is splitted into two parts
 
-1. Test the analysing class: This is implemented by unittest. So you have to run **unittest.main.py**
+1. Test the analysing class: This is implemented by unittest. So you have to run **test\_habits.py**
 2. The test of the database connection and the controlling part ist done by pytest. So you have to run **test\_pymainhabits.py** with pytest. 
 
 
